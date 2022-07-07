@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/apple_acres/static/css/main.473d4ff0.css",
+    "main.js": "/apple_acres/static/js/main.6f19e584.js",
+    "static/js/787.0c1cfe54.chunk.js": "/apple_acres/static/js/787.0c1cfe54.chunk.js",
+    "index.html": "/apple_acres/index.html",
+    "main.473d4ff0.css.map": "/apple_acres/static/css/main.473d4ff0.css.map",
+    "main.6f19e584.js.map": "/apple_acres/static/js/main.6f19e584.js.map",
+    "787.0c1cfe54.chunk.js.map": "/apple_acres/static/js/787.0c1cfe54.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.473d4ff0.css",
+    "static/js/main.6f19e584.js"
+  ]
+}
