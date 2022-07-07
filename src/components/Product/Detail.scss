@@ -1,0 +1,77 @@
+@import "../../utils/mixins.scss";
+@import "../../utils/colors.scss";
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.name, .description, .price, .true, .false {
+    padding: .2em .5em;
+}
+
+.single-line {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 .2em 0;
+}
+  
+.name {
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin: .5em 0;
+}
+
+.price {
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+
+.details {
+    cursor: pointer;
+    padding: 2em .5em;
+    font-size: 1.6rem;
+    font-weight: bold;
+    background-color: transparent;
+    transition: .5s all ease;
+
+    span {
+        float: right;
+    }
+    @include hover {
+        background-color: $lightgray;
+    }
+}
+
+.internal {
+    font-size: 1.2rem;
+    font-weight: bold;
+    div {
+        padding: .5em;
+    }
+    span {
+        font-weight: normal;
+    }
+}
+
+.price.false {
+    color: $gray;
+}
+  
+.available.true, .available.false {
+    text-transform: uppercase;
+    width: 6rem;
+    line-height: 2rem;
+    font-size: 1.2rem;
+    color: $gray;
+}
+
+.available.true:before{
+    content: "in stock";
+}
+  
+.available.false:before{
+    content: "out of stock";
+}

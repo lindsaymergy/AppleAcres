@@ -1,0 +1,27 @@
+@import "../src/utils/mixins.scss";
+@import "../src/utils/colors.scss";
+
+body {
+  margin: 0;
+}
+
+header {
+  margin: 0;
+  padding: 2em;
+  border-bottom: 2px solid $lightgray;
+
+  @include laptop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+footer {
+  border-top: 2px solid $lightgray;
+
+  h2 {
+    float: right;
+    padding: 2em;
+  }
+}

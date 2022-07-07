@@ -1,0 +1,33 @@
+@import "../../utils/mixins.scss";
+@import "../../utils/colors.scss";
+
+.flex {
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 2em;
+}
+
+.product {
+    color: $darkgray;
+    height: 100%;
+    max-width: 100%;
+    margin: 1.5em;
+    border: .5px $lightgray solid;
+
+    @include phone {
+        max-width: 100%;
+        width: 18rem;
+    }
+    @include tablet {
+        max-width: 100%;
+        width: 20rem;
+    }
+    @include laptop {
+        max-width: 100%;
+        width: 30rem;
+    }
+}
+

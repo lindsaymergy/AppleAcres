@@ -1,24 +1,23 @@
-import './App.css';
-import ProductList from './ProductList';
-import api from './api';
-import React, {useState, useEffect} from 'react';
-
+import './App.scss';
+import React from 'react';
+import ProductList from './components/Product/List';
+import strings from './strings';
 
 function App() {
-  const [products, setProducts] =  useState([]);
-
-
-  useEffect(()=> {
-    api.getAllProducts()
-      .then(setProducts);
-  },[])
-
-
+  const phone = `tel:${strings.brandPhoneNumber}`;
 
   return (
     <div>
-      <h1>Sweet Apple Acres</h1>
-        <ProductList products={products} />
+      <header className="header">
+        <h1>&#127822;{strings.brandTitle}</h1>
+        <h2>{strings.brandSubTitle} <a href={phone}></a>{strings.brandPhoneNumber}</h2>
+      </header>
+      <div className="flex">
+        <ProductList />
+      </div>
+      <footer>
+        <h2>{strings.brandFooterText}</h2>
+      </footer>
     </div>
   );
 }
