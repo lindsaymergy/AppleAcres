@@ -1,3 +1,6 @@
+# View the live version of the site [here!](https://lindsaymergy.github.io/apple_acres/)
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
