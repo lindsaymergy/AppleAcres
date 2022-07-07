@@ -1,4 +1,5 @@
-View the live verison of the site [here!](https://lindsaymergy.github.io/apple_acres/)
+# View the live version of the site [here!](https://lindsaymergy.github.io/apple_acres/)
+---
 
 # Getting Started with Create React App
 
