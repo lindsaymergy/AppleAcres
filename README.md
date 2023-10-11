@@ -1,37 +1,41 @@
-# View the live version of the site [here!](https://lindsaymergy.github.io/apple_acres/)
+# 🍎 Sweet Apple Acres Challenge
+Our friends Applejack, Big McIntosh, Apple Bloom, and Granny Smith over at the Sweet Apple Acres farm need your help to build an app so that their customers, as far away as Canterlot, can place bulk orders for produce.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+They previously worked with a backend engineer to setup an API in GraphQL and REST.
 
-## Available Scripts
+## Requirements
+Customers can call in their orders, so at a minimum, users of the app must be able to:
 
-In the project directory, you can run:
+### Browse a list of products
+### View product details
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Here are the REST endpoints:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+GET /.netlify/functions/api/products
+GET /.netlify/functions/api/products?
+search=apple
+minRating=3
+maxRating=5
+minPrice=5
+maxPrice=25
+isAvailable=true
+limit=2
+offset=0
+orderBy=name
+sort=DESC
 
-## Sass, CSS Precompiler
+GET /.netlify/functions/api/products/[id]
+GET /.netlify/functions/api/products/1e780016-94ef-4063-9fbb-fbafbabb636e
 
-This package automatically compiles your styles so you don't have to configure anything!
+POST /.netlify/functions/api/orders
 
-See the docs [here](https://www.npmjs.com/package/sass) for any questions you may have!
-
-## Apollo, a GraphQL Client
-
-This package allows us to easily interact with GraphQL Servers.
-
-See the docs [here](https://www.apollographql.com/docs/react) for any questions you may have!
-
-## Cypress, UI test tool
-
-In the project directory, you can run: 
-
-### `npx cypress open`
-
-Runs the UI tests in the Cypress Test Runner.
-
-Enjoy! 
+{
+  "name": "Fluttershy",
+  "deliveryAddress": "Fluttershy's Cottage, The Edge of the Everfree Forest",
+  "items": [{
+    "productId": "b0cc414e-7a03-428c-81ae-5c472ca11cdc",
+    "quantity": 5
+  }]
+}
